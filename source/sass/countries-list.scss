@@ -1,0 +1,40 @@
+.countries-list {
+  @include flex;
+
+  justify-content: center;
+  padding-top: 38px;
+}
+
+.countries-list__item {
+  margin: 0 60px 101px 0;
+
+  &:last-child {
+    margin-right: 0;
+    margin-left: 60px;
+  }
+
+  &:nth-child(3n) {
+    margin: 0;
+  }
+}
+
+.countries-list__action {
+  @include flex-center;
+
+  position: relative;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.41px;
+}
+
+.countries-list__country {
+  @include flex-center;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px 61px;
+  background-color: $white;
+}

@@ -1,0 +1,50 @@
+@mixin visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  font-size: 7px;
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin link-reset {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin button-reset {
+  background: none;
+  border: none;
+}
+
+@mixin input-font-reset {
+  font-family: $main-font;
+  text-transform: uppercase;
+  font-style: 16px;
+}
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flex-center {
+  @include flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.24px;
+  color: $light-grey;
+}

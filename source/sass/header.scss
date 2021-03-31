@@ -1,0 +1,11 @@
+.header {
+  @include flex;
+
+  justify-content: space-between;
+  padding: 40px 375px 33px 375px;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 21px;
+    align-items: center;
+  }
+}

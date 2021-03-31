@@ -1,0 +1,66 @@
+.menu__list {
+  @include flex;
+
+  justify-content: space-around;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: $dark-grey;
+  padding-top: 3px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.menu__item {
+  margin-right: 40px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.menu__item--price {
+  margin-right: 89px;
+}
+
+.menu__action--phone {
+  position: relative;
+  font-size: 18px;
+  text-decoration: underline;
+
+  &::before {
+    position: absolute;
+    top: -4px;
+    left: -35px;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icons/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.menu__button {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $carrot-red;
+
+  @media (max-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
+.menu-button--open {
+  background-image: url("../img/icons/icon-menu-close.svg");
+}
+
+.menu-button--close {
+  background-image: url("../img/icons/icon-menu-open.svg");
+  background-color: $white;
+}

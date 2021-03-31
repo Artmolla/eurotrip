@@ -1,0 +1,37 @@
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.list-reset {
+  @include list-reset;
+}
+
+.link-reset {
+  @include link-reset;
+}
+
+.button-reset {
+  @include button-reset;
+
+  font-family: $main-font;
+}
+
+.input-font-reset {
+  @include input-font-reset;
+}
+
+.container {
+  padding: 0 375px;
+}
+
+.title {
+  @include title;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: normal;
+  letter-spacing: -0.46px;
+  color: $light-grey-opacity;
+}

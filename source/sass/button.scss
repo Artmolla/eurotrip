@@ -1,0 +1,30 @@
+.button {
+  @include flex-center;
+
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $carrot-red;
+}
+
+.button--details {
+  position: relative;
+  width: 340px;
+  padding: 30px 40px;
+  justify-content: flex-start;
+
+  &::after {
+    position: absolute;
+    right: 40px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icons/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
