@@ -1,0 +1,24 @@
+.countries-info {
+  padding-bottom: 200px;
+}
+
+.countries-info__navigation {
+  @include flex;
+
+  width: 78%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  border-bottom: 1px solid $semi-grey-light-opacity;
+  padding: 0 0 15px 0;
+  color: $semi-grey-light-opacity;
+}
+
+.countries-info__navigation-item {
+  margin-right: 11%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

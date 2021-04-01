@@ -1,0 +1,36 @@
+.footer {
+  @include flex;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark-grey-opacity;
+}
+
+.footer__section {
+  box-sizing: border-box;
+  margin-left: 17px;
+}
+
+.footer__section--next-trips {
+  flex-basis: 32%;
+}
+
+.footer__section--contacts {
+  flex-basis: 34%;
+  padding: 0 0 0 86px;
+  border-left: 1px solid $light-grey;
+  border-right: 1px solid $light-grey;
+}
+
+.footer__section--corporative-trips {
+  flex-basis: 29%;
+  padding-left: 27px;
+}
+
+.footer__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  color: $dark-grey;
+}

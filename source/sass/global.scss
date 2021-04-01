@@ -16,12 +16,14 @@
   font-family: $main-font;
 }
 
-.input-font-reset {
-  @include input-font-reset;
+.input-reset {
+  @include input-reset;
 }
 
 .container {
-  padding: 0 375px;
+  width: 61%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
@@ -33,5 +35,5 @@
   line-height: 28px;
   font-weight: normal;
   letter-spacing: -0.46px;
-  color: $light-grey-opacity;
+  color: $semi-grey-opacity;
 }

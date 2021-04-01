@@ -1,0 +1,25 @@
+.contacts {
+  @include flex;
+
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline;
+  color: $carrot-red;
+}
+
+.contacts__email {
+  position: relative;
+  margin-bottom: 19px;
+  flex-basis: 100%;
+
+  &::before {
+    position: absolute;
+    left: -32px;
+    content: "";
+    width: 26px;
+    height: 20px;
+    background-image: url("../img/icons/icon-envelop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

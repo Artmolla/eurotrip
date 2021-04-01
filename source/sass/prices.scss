@@ -1,0 +1,25 @@
+.prices {
+  @include flex;
+
+  padding-top: 38px;
+  padding-bottom: 138px;
+}
+
+.prices__intro-text {
+  margin-bottom: 60px;
+}
+
+.prices__summary {
+  order: 1;
+  flex: 1;
+  padding: 72px 0 0 75px;
+}
+
+.prices__call-us {
+  @include flex;
+
+  padding: 0 0 0 55px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+}

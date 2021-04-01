@@ -25,24 +25,6 @@
   margin-right: 89px;
 }
 
-.menu__action--phone {
-  position: relative;
-  font-size: 18px;
-  text-decoration: underline;
-
-  &::before {
-    position: absolute;
-    top: -4px;
-    left: -35px;
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/icons/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
 .menu__button {
   display: none;
   width: 50px;

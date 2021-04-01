@@ -1,10 +1,14 @@
-$main-font: 'Montserrat', "Arial", sans-serif;
+$main-font: "Montserrat", "Arial", sans-serif;
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 //colors
 $white: #ffffff;
 $dark-grey: #141517;
-$light-grey: #2c2e3f;
+$semi-grey: #2c2e3f;
+$light-grey: #d7d9df;
 $carrot-red: #fe7865;
-$light-grey-opacity: rgba($light-grey, 0.7);
+$semi-grey-opacity: rgba($semi-grey, 0.7);
+$semi-grey-light-opacity: rgba($semi-grey, 0.3);
+$semi-grey-max-opacity: rgba($semi-grey, 0.1);
+$dark-grey-opacity: rgba($dark-grey, 0.5);

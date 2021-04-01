@@ -1,0 +1,25 @@
+.country-card {
+  display: none;
+  padding-top: 75px;
+}
+
+.country-card__wrapper {
+  position: relative;
+  flex-basis: 41%;
+}
+
+.country-card__title {
+  margin: 16px 0 55px 0;
+}
+
+.country-card__text {
+  padding: 0 100px 32px 0;
+}
+
+.country-card__button {
+  padding: 30px 40px;
+}
+
+.country-card--active {
+  @include flex;
+}
