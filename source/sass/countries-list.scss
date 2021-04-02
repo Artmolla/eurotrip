@@ -3,6 +3,10 @@
 
   justify-content: center;
   padding-top: 38px;
+
+  @media (max-width: 1023px) {
+    padding-top: 28px;
+  }
 }
 
 .countries-list__item {
@@ -12,10 +16,23 @@
   &:last-child {
     margin-right: 0;
     margin-left: 60px;
+
+    @media (max-width: $desktop-width) {
+      margin-left: 0;
+    }
   }
 
   &:nth-child(3n) {
     margin: 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    flex-basis: unset;
+    margin: 0 0 15px 0;
+
+    &:nth-child(2n) {
+      margin-left: 10px;
+    }
   }
 }
 
@@ -32,11 +49,12 @@
 .countries-list__country {
   @include flex-center;
 
+  width: 52.29%;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 16px 61px;
+  padding: 16px;
   background-color: $white;
 }
 

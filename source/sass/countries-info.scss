@@ -13,6 +13,18 @@
   border-bottom: 1px solid $semi-grey-light-opacity;
   padding: 0 0 15px 0;
   color: $semi-grey-light-opacity;
+
+  @media (max-width: 1900px) {
+    width: 80%;
+  }
+
+  @media (max-width: 1854px) {
+    width: 100%;
+  }
+
+  @media (max-width: $desktop-width) {
+    justify-content: center;
+  }
 }
 
 .countries-info__navigation-item {
@@ -21,4 +33,12 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media (max-width: 1854px) {
+    margin-right: 4%;
+  }
+}
+
+.countries-info__navigation-item--active {
+  color: $carrot-red;
 }

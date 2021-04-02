@@ -3,16 +3,29 @@
 
   justify-content: flex-end;
   padding: 185px 375px 294px 375px;
+  margin-bottom: 200px;
   background-image: url("../img/mountains-view-desktop.jpg");
   background-color: $dark-grey;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 center;
   color: $white;
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/mountains-view-tablet.jpg");
+    padding: 60px 22% 80px 25%;
+    margin-bottom: 80px;
+  }
 }
 
 .intro__wrapper {
   flex-basis: 39%;
+
+  @media (max-width: $desktop-width) {
+    @include flex-center;
+
+    flex-basis: auto;
+  }
 }
 
 .intro__title {
@@ -22,6 +35,13 @@
   line-height: 80px;
   letter-spacing: -1.1px;
   margin: 0 0 30px 0;
+
+  @media (max-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: normal;
+    margin: 0;
+  }
 }
 
 .intro__text {
@@ -29,4 +49,12 @@
   letter-spacing: -0.46px;
   padding-right: 60px;
   margin-bottom: 35px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 27px;
+    padding-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }

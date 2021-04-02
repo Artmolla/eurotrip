@@ -1,12 +1,15 @@
 .reviews {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -225px;
+  top: 114px;
+  right: -46.7%;
   box-sizing: border-box;
   width: 382px;
   padding: 26px 30px;
   background-color: $white;
+
+  @media (max-width: $desktop-width) {
+    right: unset;
+  }
 }
 
 .reviews__title {

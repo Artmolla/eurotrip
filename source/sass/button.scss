@@ -27,4 +27,13 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (max-width: $desktop-width) {
+    width: 248px;
+    padding: 20px 32px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
+  }
 }

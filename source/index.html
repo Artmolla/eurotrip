@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Путешествие по Европе</title>
 </head>
 
@@ -43,7 +43,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="page__main">
     <section class="intro">
       <div class="intro__wrapper">
         <h1 class="intro__title">Путешествие по Европе</h1>
@@ -51,61 +51,107 @@
           В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
           природы.
         </p>
-        <a class="button button--details link-reset" href="#">Смотреть тур</a>
+        <a class="button button--details link-reset" href="#countries">Смотреть тур</a>
       </div>
     </section>
-    <section class="places container">
+    <section class="places container" id="places">
       <h2 class="places__title title">Места посещения</h2>
       <p class="places__text text">Вы можете выбрь полный тур или частичный, с посещением первых 3 мест</p>
       <ul class="countries-list list-reset">
         <li class="countries-list__item">
           <a class="countries-list__action link-reset" href="#greece">
-            <img class="countries-list__image" src="img/countries/places-greece-desktop.jpg" alt="Греция" width="350" height="430">
+            <picture>
+              <source type="image/webp"
+                srcset="img/countries/places-greece-tablet.webp 1x, img/countries/places-greece-tablet@2x.webp 2x"
+                media="(max-width: 1023px)">
+              <source type="image/webp"
+                srcset="img/countries/places-greece-desktop.webp 1x, img/countries/places-greece-desktop@2x.webp 2x">
+              <source srcset="img/countries/places-greece-tablet.jpg" media="(max-width: 1023px)">
+              <img class="countries-list__image" src="img/countries/places-greece-desktop.jpg"
+                srcset="img/countries/places-greece-desktop@2x.jpg 2x" alt="Греция" width="350" height="430">
+            </picture>
             <span class="countries-list__country">Греция</span>
           </a>
         </li>
         <li class="countries-list__item">
           <a class="countries-list__action link-reset" href="#albania">
-            <img class="countries-list__image" src="img/countries/places-albania-desktop.jpg" alt="Албания" width="350" height="430">
+            <picture>
+              <source type="image/webp"
+                srcset="img/countries/places-albania-tablet.webp 1x, img/countries/places-albania-tablet@2x.webp 2x"
+                media="(max-width: 1023px)">
+              <source type="image/webp"
+                srcset="img/countries/places-albania-desktop.webp 1x, img/countries/places-albania-desktop@2x.webp 2x">
+              <source srcset="img/countries/places-albania-tablet.jpg" media="(max-width: 1023px)">
+              <img class="countries-list__image" src="img/countries/places-albania-desktop.jpg"
+                srcset="img/countries/places-albania-desktop@2x.jpg 2x" alt="Албания" width="350" height="430">
+            </picture>
             <span class="countries-list__country">Албания</span>
           </a>
         </li>
         <li class="countries-list__item">
           <a class="countries-list__action link-reset" href="#macedonia">
-            <img class="countries-list__image" src="img/countries/places-macedonia-desktop.jpg" alt="Македония" width="350" height="430">
+            <picture>
+              <source type="image/webp"
+                srcset="img/countries/places-macedonia-tablet.webp 1x, img/countries/places-macedonia-tablet@2x.webp 2x"
+                media="(max-width: 1023px)">
+              <source type="image/webp"
+                srcset="img/countries/places-macedonia-desktop.webp 1x, img/countries/places-macedonia-desktop@2x.webp 2x">
+              <source srcset="img/countries/places-macedonia-tablet.jpg" media="(max-width: 1023px)">
+              <img class="countries-list__image" src="img/countries/places-macedonia-desktop.jpg"
+                srcset="img/countries/places-macedonia-desktop@2x.jpg 2x" alt="Македония" width="350" height="430">
+            </picture>
             <span class="countries-list__country">Македония</span>
           </a>
         </li>
         <li class="countries-list__item">
           <a class="countries-list__action link-reset" href="#chernogoria">
-            <img class="countries-list__image" src="img/countries/places-chernogoria-desktop.jpg" alt="Черногория" width="350" height="430">
+            <picture>
+              <source type="image/webp"
+                srcset="img/countries/places-chernogoria-tablet.webp 1x, img/countries/places-chernogoria-tablet@2x.webp 2x"
+                media="(max-width: 1023px)">
+              <source type="image/webp"
+                srcset="img/countries/places-chernogoria-desktop.webp 1x, img/countries/places-chernogoria-desktop@2x.webp 2x">
+              <source srcset="img/countries/places-chernogoria-tablet.jpg" media="(max-width: 1023px)">
+              <img class="countries-list__image" src="img/countries/places-chernogoria-desktop.jpg"
+                srcset="img/countries/places-chernogoria-desktop@2x.jpg 2x" alt="Черногория" width="350" height="430">
+            </picture>
             <span class="countries-list__country">Черногория</span>
           </a>
         </li>
         <li class="countries-list__item">
           <a class="countries-list__action link-reset" href="#croatia">
-            <img class="countries-list__image" src="img/countries/places-croatia-desktop.jpg" alt="Хорватия" width="350" height="430">
+            <picture>
+              <source type="image/webp"
+                srcset="img/countries/places-croatia-tablet.webp 1x, img/countries/places-croatia-tablet@2x.webp 2x"
+                media="(max-width: 1023px)">
+              <source type="image/webp"
+                srcset="img/countries/places-croatia-desktop.webp 1x, img/countries/places-croatia-desktop@2x.webp 2x">
+              <source srcset="img/countries/places-croatia-tablet.jpg" media="(max-width: 1023px)">
+              <img class="countries-list__image" src="img/countries/places-croatia-desktop.jpg"
+                srcset="img/countries/places-croatia-desktop@2x.jpg 2x" alt="Хорватия" width="350" height="430">
+            </picture>
             <span class="countries-list__country">Хорватия</span>
           </a>
         </li>
       </ul>
     </section>
-    <section class="countries-info container">
+    <section class="countries-info container" id="countries">
+      <h2 class="visually-hidden">Страны и их описание</h2>
       <ul class="countries-info__navigation list-reset">
-        <li class="countries-info__navigation-item">
+        <li class="countries-info__navigation-item countries-info__navigation-item--active" id="greece">
           <a class="countries-info__navigation-action countries-info__navigation-action--active link-reset"
             href="#">Греция</a>
         </li>
-        <li class="countries-info__navigation-item">
+        <li class="countries-info__navigation-item" id="albania">
           <a class="countries-info__navigation-action link-reset" href="#">Албания</a>
         </li>
-        <li class="countries-info__navigation-item">
+        <li class="countries-info__navigation-item" id="macedonia">
           <a class="countries-info__navigation-action link-reset" href="#">Македония</a>
         </li>
-        <li class="countries-info__navigation-item">
+        <li class="countries-info__navigation-item" id="chernogoria">
           <a class="countries-info__navigation-action link-reset" href="#">Черногория</a>
         </li>
-        <li class="countries-info__navigation-item">
+        <li class="countries-info__navigation-item" id="croatia">
           <a class="countries-info__navigation-action link-reset" href="#">Хорватия</a>
         </li>
       </ul>
@@ -124,7 +170,8 @@
           <button class="country-card__button button button-reset">Купить тур сейчас</button>
         </div>
         <div class="country-card__wrapper">
-          <img src="img/countries/card-greece-desktop.jpg" alt="Греция" width="430" height="596">
+          <img class="country-card__image" src="img/countries/card-greece-desktop.jpg" alt="Греция" width="430"
+            height="596">
           <div class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
             <ul class="reviews__list list-reset">
@@ -155,7 +202,8 @@
           <button class="country-card__button button button-reset">Купить тур сейчас</button>
         </div>
         <div class="country-card__wrapper">
-          <img src="img/countries/card-albania-desktop.jpg" alt="Албания" width="430" height="596">
+          <img class="country-card__image" src="img/countries/card-albania-desktop.jpg" alt="Албания" width="430"
+            height="596">
           <div class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
             <ul class="reviews__list list-reset">
@@ -185,7 +233,8 @@
           <button class="country-card__button button button-reset">Купить тур сейчас</button>
         </div>
         <div class="country-card__wrapper">
-          <img src="img/countries/card-macedonia-desktop.jpg" alt="Македония" width="430" height="596">
+          <img class="country-card__image" src="img/countries/card-macedonia-desktop.jpg" alt="Македония" width="430"
+            height="596">
           <div class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
             <ul class="reviews__list list-reset">
@@ -215,7 +264,8 @@
           <button class="country-card__button button button-reset">Купить тур сейчас</button>
         </div>
         <div class="country-card__wrapper">
-          <img src="img/countries/card-chernogoria-desktop.jpg" alt="Черногория" width="430" height="596">
+          <img class="country-card__image" src="img/countries/card-chernogoria-desktop.jpg" alt="Черногория" width="430"
+            height="596">
           <div class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
             <ul class="reviews__list list-reset">
@@ -244,7 +294,8 @@
           <button class="country-card__button button button-reset">Купить тур сейчас</button>
         </div>
         <div class="country-card__wrapper">
-          <img src="img/countries/card-croatia-desktop.jpg" alt="Хорватия" width="430" height="596">
+          <img class="country-card__image" src="img/countries/card-croatia-desktop.jpg" alt="Хорватия" width="430"
+            height="596">
           <div class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
             <ul class="reviews__list list-reset">
@@ -266,7 +317,7 @@
       </div>
     </section>
     <section class="prices container">
-      <div class="prices__summary">
+      <div class="prices__summary" id="prices">
         <h2 class="title">Цены</h2>
         <p class="prices__intro-text text">
           Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и
@@ -275,62 +326,66 @@
         <p class="prices__call-us">Свяжитесь с нами <a class="phone link-reset" href="tel:+749978468446">+7 (499)
             -784-684-46</a></p>
       </div>
-      <div class="package">
-        <h2 class="package__title">Комплексный <span class="package__price">$1999</span></h2>
-        <p class="package__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-        <ul class="package__list list-reset">
-          <li class="package__item">
-            Разработанный маршрут с гидом группы
-          </li>
-          <li class="package__item">
-            Перелет, трансфер и проживание в отелях
-          </li>
-          <li class="package__item">
-            Завтраки, ужины в отелях и ланчи на природе
-          </li>
-          <li class="package__item">
-            Экскурсии по удивительно красивым местам Европы
-          </li>
-        </ul>
-        <button class="package__button button button-reset">Купить тур сейчас</button>
-      </div>
-      <div class="package">
-        <h2 class="package__title">Экономный <span class="package__price">$1399</span></h2>
-        <p class="package__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-        <ul class="package__list list-reset">
-          <li class="package__item">
-            Разработанный маршрут с гидом группы
-          </li>
-          <li class="package__item">
-            Перелет, трансфер
-          </li>
-          <li class="package__item">
-            Проживание в хостелах при отелях
-          </li>
-          <li class="package__item">
-            Только завтраки в отелях
-          </li>
-          <li class="package__item">
-            Экскурсии по удивительно красивым местам Европы
-          </li>
-        </ul>
-        <button class="package__button button button-reset">Купить тур сейчас</button>
-      </div>
+      <ul class="packages list-reset">
+        <li class="packages__item">
+          <h2 class="packages__title">Комплексный <span class="packages__price">$1999</span></h2>
+          <p class="packages__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+          <ul class="package list-reset">
+            <li class="package__item">
+              Разработанный маршрут с гидом группы
+            </li>
+            <li class="package__item">
+              Перелет, трансфер и проживание в отелях
+            </li>
+            <li class="package__item">
+              Завтраки, ужины в отелях и ланчи на природе
+            </li>
+            <li class="package__item">
+              Экскурсии по удивительно красивым местам Европы
+            </li>
+          </ul>
+          <button class="packages__button button button-reset">Купить тур сейчас</button>
+        </li>
+        <li class="packages__item">
+          <h2 class="packages__title">Экономный <span class="packages__price">$1399</span></h2>
+          <p class="packages__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+          <ul class="package list-reset">
+            <li class="package__item">
+              Разработанный маршрут с гидом группы
+            </li>
+            <li class="package__item">
+              Перелет, трансфер
+            </li>
+            <li class="package__item">
+              Проживание в хостелах при отелях
+            </li>
+            <li class="package__item">
+              Только завтраки в отелях
+            </li>
+            <li class="package__item">
+              Экскурсии по удивительно красивым местам Европы
+            </li>
+          </ul>
+          <button class="packages__button button button-reset">Купить тур сейчас</button>
+        </li>
+      </ul>
     </section>
-    <section class="questions container">
+    <section class="callback container">
       <h2 class="visually-hidden">Вопросы</h2>
-      <img class="questions__image" src="img/sea-view.jpg" alt="Вид на море" width="844" height="455">
-      <form class="questions-form" action="#" method="POST">
-        <h3 class="questions-form__title">У Вас остались вопросы?</h3>
-        <p class="questions-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-        <div class="questions-form__input-container">
-          <input class="questions-form__input input-reset" type="number" name="phone" id="phone-field"
-            placeholder="Введите 10 цифр номера" aria-label="Ваш номер телефона" required>
-          <input class="questions-form__input input-reset" type="email" name="email" id="email-field"
-            placeholder="E-mail" aria-label="Ваша элетронная почта">
-        </div>
-        <button class="questions-form__button button button-reset" type="submit">Отправить</button>
-      </form>
+      <div class="callback__container">
+        <img class="callback__image" src="img/sea-view.jpg" alt="Вид на море" width="844" height="455">
+        <form class="callback-form" action="#" method="POST">
+          <h3 class="callback-form__title">У Вас остались вопросы?</h3>
+          <p class="callback-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+          <div class="callback-form__input-container">
+            <input class="callback-form__input input-reset" type="number" name="phone" id="phone-field"
+              placeholder="+7   Введите 10 цифр номера" aria-label="Ваш номер телефона" required>
+            <input class="callback-form__input input-reset" type="email" name="email" id="email-field"
+              placeholder="E-mail" aria-label="Ваша элетронная почта">
+          </div>
+          <button class="callback-form__button button button-reset" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer container">
@@ -411,6 +466,20 @@
       </p>
     </section>
   </footer>
+  <div class="modal">
+    <img src="img/by-the-sea.jpg" alt="Море" width="338" height="444">
+    <form class="callback-form" action="#" method="POST">
+      <h3 class="callback-form__title">Купить тур</h3>
+      <p class="callback-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+      <div class="callback-form__input-container">
+        <input class="callback-form__input input-reset" type="number" name="phone" id="phone-field"
+          placeholder="+7   Введите 10 цифр номера" aria-label="Ваш номер телефона" required>
+        <input class="callback-form__input input-reset" type="email" name="email" id="email-field" placeholder="E-mail"
+          aria-label="Ваша элетронная почта">
+      </div>
+      <button class="callback-form__button button button-reset" type="submit">Отправить</button>
+    </form>
+  </div>
 </body>
 
 </html>

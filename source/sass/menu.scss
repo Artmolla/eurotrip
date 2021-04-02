@@ -32,17 +32,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $carrot-red;
+  background-image: url("../img/icons/icon-menu-close.svg");
 
   @media (max-width: $desktop-width) {
-    display: inline-block;
+    display: flex;
   }
 }
 
 .menu-button--open {
-  background-image: url("../img/icons/icon-menu-close.svg");
-}
-
-.menu-button--close {
   background-image: url("../img/icons/icon-menu-open.svg");
   background-color: $white;
 }
