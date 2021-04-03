@@ -4,15 +4,34 @@
   font-size: 14px;
   line-height: 17px;
   color: $dark-grey-opacity;
+
+  @media (max-width: $desktop-width) {
+    justify-content: center;
+  }
 }
 
 .footer__section {
   box-sizing: border-box;
   margin-left: 1.5%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .footer__section--next-trips {
   width: 32%;
+
+  @media (max-width: $desktop-width) {
+    width: 48%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .footer__section--contacts {
@@ -20,11 +39,25 @@
   padding: 0 0 0 7.7%;
   border-left: 1px solid $light-grey;
   border-right: 1px solid $light-grey;
+
+  @media (max-width: $desktop-width) {
+    width: 48%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .footer__section--corporative-trips {
   width: 29%;
   padding-left: 2.4%;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .footer__title {

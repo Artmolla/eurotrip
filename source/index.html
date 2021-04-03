@@ -56,7 +56,7 @@
     </section>
     <section class="places container" id="places">
       <h2 class="places__title title">Места посещения</h2>
-      <p class="places__text text">Вы можете выбрь полный тур или частичный, с посещением первых 3 мест</p>
+      <p class="places__text text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       <ul class="countries-list list-reset">
         <li class="countries-list__item">
           <a class="countries-list__action link-reset" href="#greece">
@@ -155,7 +155,7 @@
           <a class="countries-info__navigation-action link-reset" href="#">Хорватия</a>
         </li>
       </ul>
-      <div class="country-card country-card--active">
+      <div class="country-card  country-card--active">
         <div class="country-card__wrapper">
           <h2 class="country-card__title title">Греция</h2>
           <p class="country-card__text text">
@@ -170,8 +170,22 @@
           <button class="country-card__button button button-reset">Купить тур сейчас</button>
         </div>
         <div class="country-card__wrapper">
-          <img class="country-card__image" src="img/countries/card-greece-desktop.jpg" alt="Греция" width="430"
-            height="596">
+          <picture class="country-card__picture">
+            <source type="image/webp"
+              srcset="img/countries/card-greece-mobile.webp 1x, img/countries/card-greece-mobile@2x.webp 2x"
+              media="(max-width: 767px)">
+            <source type="image/webp"
+              srcset="img/countries/card-greece-tablet.webp 1x, img/countries/card-greece-tablet@2x.webp 2x"
+              media="(max-width: 1023px)">
+            <source type="image/webp"
+              srcset="img/countries/card-greece-desktop.webp 1x, img/countries/card-greece-desktop@2x.webp 2x">
+            <source srcset="img/countries/card-greece-mobile.jpg 1x, img/countries/card-greece-mobile@2x.jpg 2x"
+              media="(max-width: 767px)">
+            <source srcset="img/countries/card-greece-tablet.jpg 1x, img/countries/card-greece-tablet@2x.jpg 2x"
+              media="(max-width: 1023px)">
+            <img class="country-card__image" src="img/countries/card-greece-desktop.jpg"
+              srcset="img/countries/card-greece-desktop@2x.jpg 2x" alt="Греция" width="430" height="596">
+          </picture>
           <div class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
             <ul class="reviews__list list-reset">
@@ -182,8 +196,12 @@
                   света!
                 </p>
                 <a class="reviews__author link-reset" href="#">
-                  <img class="reviews__image" src="img/authors/author-vlada.png" alt="Влада Голицина" width="38"
-                    height="38">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/authors/author-vlada.webp 1x, img/authors/author-vlada@2x.webp 2x">
+                    <img class="reviews__image" src="img/authors/author-vlada.png"
+                      srcset="img/authors/author-vlada@2x.png 2x" alt="Влада" width="38" height="38">
+                  </picture>
                   <span>Влада Голицина</span>
                 </a>
               </li>
@@ -202,8 +220,22 @@
           <button class="country-card__button button button-reset">Купить тур сейчас</button>
         </div>
         <div class="country-card__wrapper">
-          <img class="country-card__image" src="img/countries/card-albania-desktop.jpg" alt="Албания" width="430"
-            height="596">
+          <picture class="country-card__picture">
+            <source type="image/webp"
+              srcset="img/countries/card-albania-mobile.webp 1x, img/countries/card-albania-mobile@2x.webp 2x"
+              media="(max-width: 767px)">
+            <source type="image/webp"
+              srcset="img/countries/card-albania-tablet.webp 1x, img/countries/card-albania-tablet@2x.webp 2x"
+              media="(max-width: 1023px)">
+            <source type="image/webp"
+              srcset="img/countries/card-albania-desktop.webp 1x, img/countries/card-albania-desktop@2x.webp 2x">
+            <source srcset="img/countries/card-albania-mobile.jpg 1x, img/countries/card-albania-mobile@2x.jpg 2x"
+              media="(max-width: 767px)">
+            <source srcset="img/countries/card-albania-tablet.jpg 1x, img/countries/card-albania-tablet@2x.jpg 2x"
+              media="(max-width: 1023px)">
+            <img class="country-card__image" src="img/countries/card-albania-desktop.jpg"
+              srcset="img/countries/card-albania-desktop@2x.jpg 2x" alt="Албания" width="430" height="596">
+          </picture>
           <div class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
             <ul class="reviews__list list-reset">
@@ -213,8 +245,12 @@
                   смогла вкусить все красоты природы :)
                 </p>
                 <a class="reviews__author link-reset" href="#">
-                  <img class="reviews__image" src="img/authors/author-marishka.png" alt="Маришка" width="38"
-                    height="38">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/authors/author-marishka.webp 1x, img/authors/author-marishka@2x.webp 2x">
+                    <img class="reviews__image" src="img/authors/author-marishka.png"
+                      srcset="img/authors/author-marishka@2x.png 2x" alt="Маришка" width="38" height="38">
+                  </picture>
                   <span>Маришка</span>
                 </a>
               </li>
@@ -233,8 +269,22 @@
           <button class="country-card__button button button-reset">Купить тур сейчас</button>
         </div>
         <div class="country-card__wrapper">
-          <img class="country-card__image" src="img/countries/card-macedonia-desktop.jpg" alt="Македония" width="430"
-            height="596">
+          <picture class="country-card__picture">
+            <source type="image/webp"
+              srcset="img/countries/card-macedonia-mobile.webp 1x, img/countries/card-macedonia-mobile@2x.webp 2x"
+              media="(max-width: 767px)">
+            <source type="image/webp"
+              srcset="img/countries/card-macedonia-tablet.webp 1x, img/countries/card-macedonia-tablet@2x.webp 2x"
+              media="(max-width: 1023px)">
+            <source type="image/webp"
+              srcset="img/countries/card-macedonia-desktop.webp 1x, img/countries/card-macedonia-desktop@2x.webp 2x">
+            <source srcset="img/countries/card-macedonia-mobile.jpg 1x, img/countries/card-macedonia-mobile@2x.jpg 2x"
+              media="(max-width: 767px)">
+            <source srcset="img/countries/card-macedonia-tablet.jpg 1x, img/countries/card-macedonia-tablet@2x.jpg 2x"
+              media="(max-width: 1023px)">
+            <img class="country-card__image" src="img/countries/card-macedonia-desktop.jpg"
+              srcset="img/countries/card-macedonia-desktop@2x.jpg 2x" alt="Македония" width="430" height="596">
+          </picture>
           <div class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
             <ul class="reviews__list list-reset">
@@ -245,8 +295,12 @@
                   гору.
                 </p>
                 <a class="reviews__author link-reset" href="#">
-                  <img class="reviews__image" src="img/authors/author-mikhail.png" alt="Михаил Кузьмин" width="38"
-                    height="38">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/authors/author-mikhail.webp 1x, img/authors/author-mikhail@2x.webp 2x">
+                    <img class="reviews__image" src="img/authors/author-mikhail.png"
+                      srcset="img/authors/author-mikhail@2x.png 2x" alt="Михаил" width="38" height="38">
+                  </picture>
                   <span>Михаил Кузьмин</span>
                 </a>
               </li>
@@ -264,8 +318,24 @@
           <button class="country-card__button button button-reset">Купить тур сейчас</button>
         </div>
         <div class="country-card__wrapper">
-          <img class="country-card__image" src="img/countries/card-chernogoria-desktop.jpg" alt="Черногория" width="430"
-            height="596">
+          <picture class="country-card__picture">
+            <source type="image/webp"
+              srcset="img/countries/card-chernogoria-mobile.webp 1x, img/countries/card-chernogoria-mobile@2x.webp 2x"
+              media="(max-width: 767px)">
+            <source type="image/webp"
+              srcset="img/countries/card-chernogoria-tablet.webp 1x, img/countries/card-chernogoria-tablet@2x.webp 2x"
+              media="(max-width: 1023px)">
+            <source type="image/webp"
+              srcset="img/countries/card-chernogoria-desktop.webp 1x, img/countries/card-chernogoria-desktop@2x.webp 2x">
+            <source
+              srcset="img/countries/card-chernogoria-mobile.jpg 1x, img/countries/card-chernogoria-mobile@2x.jpg 2x"
+              media="(max-width: 767px)">
+            <source
+              srcset="img/countries/card-chernogoria-tablet.jpg 1x, img/countries/card-chernogoria-tablet@2x.jpg 2x"
+              media="(max-width: 1023px)">
+            <img class="country-card__image" src="img/countries/card-chernogoria-desktop.jpg"
+              srcset="img/countries/card-chernogoria-desktop@2x.jpg 2x" alt="Черногория" width="430" height="596">
+          </picture>
           <div class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
             <ul class="reviews__list list-reset">
@@ -274,8 +344,12 @@
                   Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
                 </p>
                 <a class="reviews__author link-reset" href="#">
-                  <img class="reviews__image" src="img/authors/author-anastasiya.png" alt="Анастасия Мей" width="38"
-                    height="38">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/authors/author-anastasiya.webp 1x, img/authors/author-anastasiya@2x.webp 2x">
+                    <img class="reviews__image" src="img/authors/author-anastasiya.png"
+                      srcset="img/authors/author-anastasiya@2x.png 2x" alt="Анастасия" width="38" height="38">
+                  </picture>
                   <span>Анастасия Мей</span>
                 </a>
               </li>
@@ -294,8 +368,22 @@
           <button class="country-card__button button button-reset">Купить тур сейчас</button>
         </div>
         <div class="country-card__wrapper">
-          <img class="country-card__image" src="img/countries/card-croatia-desktop.jpg" alt="Хорватия" width="430"
-            height="596">
+          <picture class="country-card__picture">
+            <source type="image/webp"
+              srcset="img/countries/card-croatia-mobile.webp 1x, img/countries/card-croatia-mobile@2x.webp 2x"
+              media="(max-width: 767px)">
+            <source type="image/webp"
+              srcset="img/countries/card-croatia-tablet.webp 1x, img/countries/card-croatia-tablet@2x.webp 2x"
+              media="(max-width: 1023px)">
+            <source type="image/webp"
+              srcset="img/countries/card-croatia-desktop.webp 1x, img/countries/card-croatia-desktop@2x.webp 2x">
+            <source srcset="img/countries/card-croatia-mobile.jpg 1x, img/countries/card-croatia-mobile@2x.jpg 2x"
+              media="(max-width: 767px)">
+            <source srcset="img/countries/card-croatia-tablet.jpg 1x, img/countries/card-croatia-tablet@2x.jpg 2x"
+              media="(max-width: 1023px)">
+            <img class="country-card__image" src="img/countries/card-croatia-desktop.jpg"
+              srcset="img/countries/card-croatia-desktop@2x.jpg 2x" alt="Хорватия" width="430" height="596">
+          </picture>
           <div class="reviews">
             <h2 class="reviews__title">Отзывы</h2>
             <ul class="reviews__list list-reset">
@@ -306,8 +394,12 @@
                   спутать по итогу :)
                 </p>
                 <a class="reviews__author link-reset" href="#">
-                  <img class="reviews__image" src="img/authors/author-vladimir.png" alt="Владимир Мулицин" width="38"
-                    height="38">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/authors/author-vladimir.webp 1x, img/authors/author-vladimir@2x.webp 2x">
+                    <img class="reviews__image" src="img/authors/author-vladimir.png"
+                      srcset="img/authors/author-vladimir@2x.png 2x" alt="Владимир" width="38" height="38">
+                  </picture>
                   <span>Владимир Мулицин</span>
                 </a>
               </li>
@@ -323,8 +415,9 @@
           Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и
           возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
         </p>
-        <p class="prices__call-us">Свяжитесь с нами <a class="phone link-reset" href="tel:+749978468446">+7 (499)
-            -784-684-46</a></p>
+        <p class="prices__call-us">Свяжитесь с нами</p>
+        <a class="prices__call-us phone link-reset" href="tel:+749978468446">+7 (499)
+          -784-684-46</a>
       </div>
       <ul class="packages list-reset">
         <li class="packages__item">
@@ -373,7 +466,14 @@
     <section class="callback container">
       <h2 class="visually-hidden">Вопросы</h2>
       <div class="callback__container">
-        <img class="callback__image" src="img/sea-view.jpg" alt="Вид на море" width="844" height="455">
+        <picture>
+          <source type="image/webp" srcset="img/sea-view-tablet.webp 1x, img/sea-view-tablet@2x.webp 2x"
+            media="(max-width: 1023px)">
+          <source type="image/webp" srcset="img/sea-view-desktop.webp 1x, img/sea-view-desktop@2x.webp 2x">
+          <source srcset="img/sea-view-tablet.jpg 1x, img/sea-view-tablet@2x.jpg 2x" media="(max-width: 1023px)">
+          <img class="callback__image" src="img/sea-view-desktop.jpg" srcset="img/sea-view-desktop@2x.jpg 2x"
+            alt="Вид на море" width="844" height="455">
+        </picture>
         <form class="callback-form" action="#" method="POST">
           <h3 class="callback-form__title">У Вас остались вопросы?</h3>
           <p class="callback-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>

@@ -4,8 +4,12 @@
   justify-content: center;
   padding-top: 38px;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $desktop-width) {
     padding-top: 28px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 4px;
   }
 }
 
@@ -24,15 +28,29 @@
 
   &:nth-child(3n) {
     margin: 0;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &:nth-child(2n) {
+    @media (max-width: $desktop-width) {
+      margin-left: 10px;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin-left: 0;
+    }
   }
 
   @media (max-width: $desktop-width) {
     flex-basis: unset;
     margin: 0 0 15px 0;
+  }
 
-    &:nth-child(2n) {
-      margin-left: 10px;
-    }
+  @media (max-width: $tablet-width) {
+    margin-bottom: 35px;
   }
 }
 

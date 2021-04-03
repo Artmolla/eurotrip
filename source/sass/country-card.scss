@@ -1,6 +1,10 @@
 .country-card {
   display: none;
   padding-top: 75px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 15px;
+  }
 }
 
 .country-card__wrapper {
@@ -13,30 +17,52 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-basis: 100%;
+    margin-bottom: 28px;
   }
 }
 
 .country-card__title {
   margin: 16px 0 55px 0;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .country-card__text {
   padding: 0 21% 32px 0;
 
   @media (max-width: $desktop-width) {
-    padding: 0;
+    padding: 0 10px;
+    text-align: center;
   }
 }
 
 .country-card__button {
   padding: 30px 40px;
+
+  @media (max-width: $desktop-width) {
+    padding: 20px 40px;
+  }
 }
 
 .country-card--active {
   @include flex;
 }
 
+.country-card__picture {
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    font-size: 0;
+  }
+}
+
 .country-card__image {
   max-width: 100%;
   object-fit: cover;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    height: auto;
+  }
 }

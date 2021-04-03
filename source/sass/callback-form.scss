@@ -10,6 +10,17 @@
   width: 656px;
   padding: 50px;
   background-color: $white;
+
+  @media (max-width: $desktop-width) {
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+    background-color: $light-pink;
+  }
 }
 
 .callback-form__title {
@@ -45,6 +56,11 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    flex-basis: 100%;
   }
 }
 

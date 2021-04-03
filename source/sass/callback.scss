@@ -7,9 +7,25 @@
   margin-left: 12px;
   max-width: 100%;
   object-fit: cover;
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .callback__container {
   position: relative;
   width: 73%;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 320px;
+  }
 }

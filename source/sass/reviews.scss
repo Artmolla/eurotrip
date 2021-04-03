@@ -9,6 +9,13 @@
 
   @media (max-width: $desktop-width) {
     right: unset;
+    top: unset;
+    bottom: -25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    width: 268px;
   }
 }
 

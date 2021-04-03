@@ -13,8 +13,18 @@
 
   @media (max-width: $desktop-width) {
     background-image: url("../img/mountains-view-tablet.jpg");
-    padding: 60px 22% 80px 25%;
+    padding: 60px 22% 80px 23%;
     margin-bottom: 80px;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/mountains-view-mobile.jpg");
+    padding: 80px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    background-size: auto;
+    background-position: top;
+    background-color: $white;
   }
 }
 
@@ -42,6 +52,11 @@
     letter-spacing: normal;
     margin: 0;
   }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
 }
 
 .intro__text {
@@ -56,5 +71,9 @@
     padding-right: 0;
     margin-bottom: 10px;
     text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    color: $semi-grey;
   }
 }
