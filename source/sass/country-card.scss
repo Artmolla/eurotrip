@@ -9,7 +9,7 @@
 
 .country-card__wrapper {
   position: relative;
-  flex-basis: 41%;
+  flex-basis: 39.7%;
   min-width: 305px;
 
   @media (max-width: $desktop-width) {
@@ -30,7 +30,7 @@
 }
 
 .country-card__text {
-  padding: 0 21% 32px 0;
+  padding: 0 20% 32px 0;
 
   @media (max-width: $desktop-width) {
     padding: 0 10px;

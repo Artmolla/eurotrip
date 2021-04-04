@@ -2,7 +2,7 @@
   @include flex;
 
   padding-top: 38px;
-  padding-bottom: 138px;
+  padding-bottom: 136px;
 
   @media (max-width: 1023px) {
     box-sizing: border-box;
@@ -21,7 +21,7 @@
 .prices__summary {
   order: 1;
   width: 23%;
-  padding: 72px 0 0 6.2%;
+  padding: 72px 0 0 5.6%;
 
   @media (max-width: 1023px) {
     order: 0;

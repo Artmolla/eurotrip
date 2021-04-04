@@ -1,6 +1,6 @@
 .footer {
     display: grid;
-    grid-template-columns: 35.1% 33.3% 1fr;
+    grid-template-columns: 34.5% 33% 1fr;
     font-size: 14px;
     line-height: 17px;
     color: $dark-grey-opacity;
@@ -39,4 +39,5 @@
 
 .footer__text {
   line-height: 24px;
+  padding-right: 4%;
 }

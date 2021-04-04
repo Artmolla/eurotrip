@@ -2,13 +2,14 @@
   @include flex-center;
   @include standard-shadow;
 
-  position: absolute;
-  top: 50%;
-  right: -337px;
-  transform: translateY(-50%);
   box-sizing: border-box;
+  position: absolute;
+  top: 49.4%;
+  right: -325px;
+  transform: translateY(-50%);
   width: 656px;
-  padding: 47px 50px 48px 50px;
+  border-radius: 5px;
+  padding: 43px 50px 56px 50px;
   background-color: $white;
 
   @media (max-width: $desktop-width) {
@@ -29,7 +30,7 @@
   line-height: 32px;
   font-weight: 600;
   text-align: center;
-  margin: 5px 0;
+  margin: 5px 0 0 0;
 }
 
 .callback-form__text {

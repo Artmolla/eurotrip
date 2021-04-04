@@ -1,8 +1,9 @@
 .packages {
   @include flex;
 
-  flex-basis: 70%;
   box-sizing: border-box;
+  flex-basis: 69.5%;
+  padding: 0 0 0 0.6%;
 
   @media (max-width: $desktop-width) {
     flex-basis: unset;

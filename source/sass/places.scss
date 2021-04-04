@@ -8,7 +8,7 @@
 }
 
 .places__title {
-  padding-right: 657px;
+  padding: 0 70% 0 0.6%;
   margin-bottom: 64px;
 
   @media (max-width: $desktop-width) {
@@ -18,10 +18,11 @@
 }
 
 .places__text {
-  padding-right: 70%;
+  padding: 0 70% 0 0.6%;
 
   @media (max-width: $desktop-width) {
     padding: 0 26%;
+    margin-top: 21px;
     text-align: center;
   }
 
