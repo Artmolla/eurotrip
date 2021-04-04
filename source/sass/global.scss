@@ -44,7 +44,7 @@
     height: 4px;
     background-color: $carrot-red;
 
-  @media (max-width: $desktop-width) {
+    @media (max-width: $desktop-width) {
       display: none;
     }
   }

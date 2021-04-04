@@ -1,41 +1,41 @@
 .footer {
-    display: grid;
-    grid-template-columns: 34.5% 33% 1fr;
-    font-size: 14px;
-    line-height: 17px;
-    color: $dark-grey-opacity;
-    padding-bottom: 80px;
-  }
+  display: grid;
+  grid-template-columns: 34.5% 33% 1fr;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark-grey-opacity;
+  padding-bottom: 80px;
+}
 
-  .footer__section {
-    box-sizing: border-box;
-  }
+.footer__section {
+  box-sizing: border-box;
+}
 
-  .footer__section--next-trips {
-   padding: 0 0 0 5%;
-  }
+.footer__section--next-trips {
+  padding: 0 0 0 5%;
+}
 
-  .footer__section--contacts {
-    padding: 0 0 0 23%;
-    border-left: 1px solid $light-grey;
-    border-right: 1px solid $light-grey;
+.footer__section--contacts {
+  padding: 0 0 0 23%;
+  border-left: 1px solid $light-grey;
+  border-right: 1px solid $light-grey;
 
-    @media (max-width: 1260px) {
-      padding: 0 0 0 16%;
-    }
+  @media (max-width: 1260px) {
+    padding: 0 0 0 16%;
   }
+}
 
-  .footer__section--corporative-trips {
-    padding: 0 0 0 13%;
-  }
+.footer__section--corporative-trips {
+  padding: 0 0 0 13%;
+}
 
-  .footer__title {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 32px;
-    margin-bottom: 20px;
-    color: $dark-grey;
-  }
+.footer__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  color: $dark-grey;
+}
 
 .footer__text {
   line-height: 24px;
