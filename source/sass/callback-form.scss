@@ -4,11 +4,11 @@
 
   position: absolute;
   top: 50%;
-  right: -340px;
+  right: -337px;
   transform: translateY(-50%);
   box-sizing: border-box;
   width: 656px;
-  padding: 50px;
+  padding: 47px 50px 48px 50px;
   background-color: $white;
 
   @media (max-width: $desktop-width) {

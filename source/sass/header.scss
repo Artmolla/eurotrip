@@ -4,10 +4,25 @@
   position: relative;
   box-sizing: border-box;
   justify-content: space-between;
-  padding: 40px 0 33px 0;
+  padding: 40px 7px 33px 7px;
 
   @media (max-width: $desktop-width) {
     padding: 0;
     align-items: center;
+  }
+}
+
+.header__logo-container {
+
+  @media (max-width: $desktop-width) {
+    @include flex-center;
+
+    padding: 14px 0 10px 2.8%;
+  }
+}
+
+.header__logo {
+  @media (max-width: $desktop-width) {
+    width: 44px;
   }
 }

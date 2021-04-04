@@ -2,7 +2,7 @@
   @include flex;
 
   justify-content: flex-end;
-  padding: 185px 375px 294px 375px;
+  padding: 185px 20% 294px 20%;
   margin-bottom: 200px;
   background-image: url("../img/mountains-view-desktop.jpg");
   background-color: $dark-grey;
@@ -63,7 +63,7 @@
   line-height: 27px;
   letter-spacing: -0.46px;
   padding-right: 60px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   @media (max-width: $desktop-width) {
     font-size: 16px;

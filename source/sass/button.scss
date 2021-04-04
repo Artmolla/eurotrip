@@ -17,17 +17,6 @@
   padding: 30px 40px;
   justify-content: flex-start;
 
-  &::after {
-    position: absolute;
-    right: 40px;
-    content: "";
-    width: 18px;
-    height: 18px;
-    background-image: url("../img/icons/icon-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   @media (max-width: $desktop-width) {
     width: 248px;
     padding: 20px 32px;
@@ -36,4 +25,11 @@
     line-height: 12px;
     letter-spacing: 2px;
   }
+}
+
+.button__icon {
+    position: absolute;
+    right: 40px;
+    width: 18px;
+    height: 18px;
 }

@@ -16,16 +16,12 @@
   padding-left: 28px;
   line-height: 32px;
   margin-bottom: 15px;
+}
 
-  &::before {
-    position: absolute;
-    top: 6px;
-    left: -6px;
-    content: "";
-    width: 22px;
-    height: 22px;
-    background-image: url("../img/icons/icon-check.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.package__icon {
+  position: absolute;
+  top: 6px;
+  left: -6px;
+  width: 22px;
+  height: 22px;
 }
