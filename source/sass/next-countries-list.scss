@@ -2,6 +2,10 @@
   @include flex;
 
   align-items: flex-start;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+  }
 }
 
 .next-countries-list__item {

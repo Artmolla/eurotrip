@@ -94,6 +94,10 @@
   @media (max-width: $desktop-width) {
     display: flex;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 50px;
+  }
 }
 
 .menu__button--open {

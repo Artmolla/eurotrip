@@ -5,6 +5,11 @@
   @media (max-width: $desktop-width) {
     margin-bottom: 62px;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 4.9%;
+    box-sizing: border-box;
+  }
 }
 
 .callback__image {

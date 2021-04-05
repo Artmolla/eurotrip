@@ -18,6 +18,10 @@
 
     padding: 14px 0 10px 2.8%;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 13px 0 10px 4.8%;
+  }
 }
 
 .header__logo {

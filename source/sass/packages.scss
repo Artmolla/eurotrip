@@ -38,6 +38,7 @@
   @media (max-width: $tablet-width) {
     margin: 0;
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -53,6 +54,10 @@
 
   @media (max-width: $desktop-width) {
     padding: 30px 10% 14px 10%;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 19px;
   }
 }
 
@@ -124,5 +129,9 @@
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 16px 30px;
   }
 }

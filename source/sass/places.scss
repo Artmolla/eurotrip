@@ -5,6 +5,10 @@
     justify-content: center;
     margin-bottom: 80px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 6px;
+  }
 }
 
 .places__title {
@@ -28,5 +32,6 @@
 
   @media (max-width: $tablet-width) {
     padding: 0 10px;
+    margin-top: 15px;
   }
 }

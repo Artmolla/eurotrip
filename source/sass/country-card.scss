@@ -19,6 +19,10 @@
     flex-basis: 100%;
     margin-bottom: 30px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .country-card__title {
@@ -26,6 +30,10 @@
 
   @media (max-width: $desktop-width) {
     margin-bottom: 5px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 5px;
   }
 }
 
@@ -37,6 +45,11 @@
     margin-bottom: 20px;
     text-align: center;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 6%;
+    margin-top: 10px;
+  }
 }
 
 .country-card__button {
@@ -47,6 +60,10 @@
     font-size: 10px;
     line-height: 12px;
     padding: 19px 52px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 19px 70px;
   }
 }
 

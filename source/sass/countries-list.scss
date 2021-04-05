@@ -25,13 +25,17 @@
       margin-left: 0;
       margin-top: 11px;
     }
+
+    @media (max-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 
   &:nth-child(3n) {
     margin: 0;
 
     @media (max-width: $tablet-width) {
-      margin-bottom: 35px;
+      margin-bottom: 29px;
     }
   }
 
@@ -51,7 +55,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 29px;
+    flex-basis: 100%;
   }
 }
 

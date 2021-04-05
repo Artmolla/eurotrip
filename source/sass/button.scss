@@ -25,6 +25,10 @@
     line-height: 12px;
     letter-spacing: 2px;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+  }
 }
 
 .button__icon {

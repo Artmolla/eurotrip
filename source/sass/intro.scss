@@ -18,13 +18,11 @@
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url("../img/mountains-view-mobile.jpg");
-    padding: 80px 0;
-    margin-bottom: 20px;
     text-align: center;
-    background-size: auto;
-    background-position: top;
+    background-image: none;
     background-color: $white;
+    padding: 0;
+    margin-bottom: 104px;
   }
 }
 
@@ -35,6 +33,20 @@
     @include flex-center;
 
     flex-basis: auto;
+  }
+}
+
+.intro__title-container {
+  @media (max-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 235px;
+    background-image: url("../img/mountains-view-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 81px;
+    margin-bottom: 5px;
   }
 }
 
@@ -55,6 +67,8 @@
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
+    line-height: 36px;
+    padding: 0 16% 0 18%;
     margin-bottom: 80px;
   }
 }
@@ -75,5 +89,7 @@
 
   @media (max-width: $tablet-width) {
     color: $semi-grey;
+    padding: 0 8%;
+    margin-bottom: 19px;
   }
 }

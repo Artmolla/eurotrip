@@ -2,9 +2,12 @@
   padding: 0 10% 200px 10.7%;
 
   @media (max-width: $desktop-width) {
-    padding-bottom: 0;
     margin-bottom: 57px;
     padding: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 35px;
   }
 }
 
@@ -47,7 +50,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    margin-right: 13%;
+    margin-right: 31%;
   }
 }
 
