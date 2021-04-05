@@ -3,7 +3,8 @@
 
   @media (max-width: $desktop-width) {
     padding-bottom: 0;
-    margin-bottom: 68px;
+    margin-bottom: 57px;
+    padding: 0;
   }
 }
 
@@ -28,7 +29,9 @@
   }
 
   @media (max-width: $desktop-width) {
-    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0 4.8% 14px 4.8%;
+    overflow-x: scroll;
   }
 }
 
@@ -41,6 +44,10 @@
 
   @media (max-width: 1854px) {
     margin-right: 4%;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-right: 13%;
   }
 }
 

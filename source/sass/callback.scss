@@ -1,6 +1,10 @@
 .callback {
   position: relative;
   margin-bottom: 151px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .callback__image {

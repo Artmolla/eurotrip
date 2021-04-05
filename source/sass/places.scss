@@ -3,7 +3,7 @@
     @include flex;
 
     justify-content: center;
-    margin-bottom: 86px;
+    margin-bottom: 80px;
   }
 }
 
@@ -12,7 +12,7 @@
   margin-bottom: 64px;
 
   @media (max-width: $desktop-width) {
-    padding-right: 0;
+    padding: 0;
     margin: 0;
   }
 }
