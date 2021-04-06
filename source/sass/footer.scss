@@ -4,11 +4,9 @@
   font-size: 14px;
   line-height: 17px;
   color: $dark-grey-opacity;
-  padding-bottom: 80px;
 
   @media (max-width: $desktop-width) {
     grid-template-columns: 54% 1fr;
-    padding-bottom: 50px;
   }
 
   @media (max-width: $tablet-width) {
@@ -25,6 +23,7 @@
 
   @media (max-width: $tablet-width) {
     padding: 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -59,6 +58,7 @@
 
   @media (max-width: $tablet-width) {
     grid-column: 1;
+    margin: 0;
   }
 }
 

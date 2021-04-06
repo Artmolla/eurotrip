@@ -1,11 +1,19 @@
-const toggleMenuButton = document.querySelector('.menu__button');
-const menu = document.querySelector('.menu');
-const menuList = menu.querySelector('.menu__list');
+'use strict';
 
-toggleMenuButton.addEventListener('click', (evt) => {
-  evt.preventDefault();
+(() => {
+  const menu = document.querySelector('.menu');
+  const menuList = menu.querySelector('.menu__list');
+  const toggleMenuButton = document.querySelector('.menu__button');
 
-  toggleMenuButton.classList.toggle('menu__button--open');
-  menu.classList.toggle('menu--open');
-  menuList.classList.toggle('menu__list--open');
-});
+  menu.classList.remove('menu--no-js');
+  menuList.classList.remove('menu__list--no-js');
+  toggleMenuButton.classList.remove('menu__button--no-js');
+
+  toggleMenuButton.addEventListener('click', (evt) => {
+    evt.preventDefault();
+
+    toggleMenuButton.classList.toggle('menu__button--open');
+    menu.classList.toggle('menu--open');
+    menuList.classList.toggle('menu__list--open');
+  });
+})();

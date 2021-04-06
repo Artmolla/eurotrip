@@ -1,10 +1,11 @@
 .header {
   @include flex;
 
-  position: relative;
+  // position: relative;
   box-sizing: border-box;
   justify-content: space-between;
   padding: 40px 0.4% 33px 0.4%;
+  overflow: hidden;
 
   @media (max-width: $desktop-width) {
     padding: 0;
@@ -16,11 +17,11 @@
   @media (max-width: $desktop-width) {
     @include flex-center;
 
-    padding: 14px 0 10px 2.8%;
+    padding: 16px 0 10px 2.8%;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 13px 0 10px 4.8%;
+    padding: 16px 0 10px 4.8%;
   }
 }
 

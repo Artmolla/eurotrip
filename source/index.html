@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" as="font" href="fonts/Montserrat-Regular.woff" type="font/woff" crossorigin>
+  <link rel="preload" as="font" href="fonts/Montserrat-Medium.woff" type="font/woff" crossorigin>
+  <link rel="preload" as="font" href="fonts/Montserrat-Bold.woff" type="font/woff" crossorigin>
+  <link rel="preload" as="font" href="fonts/Montserrat-SemiBold.woff" type="font/woff" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <title>Путешествие по Европе</title>
 </head>
@@ -114,8 +118,8 @@
         fill="white" />
     </symbol>
     <symbol id="icon-menu-item-arrow" viewBox="0 0 8 12">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F"
-        fill-opacity="0.5" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z"
+        fill="currentColor" fill-opacity="0.5" />
     </symbol>
     <symbol id="icon-menu-open" viewBox="0 0 24 25">
       <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round"
@@ -129,21 +133,31 @@
   </svg>
 
   <header class="header container">
-    <nav class="menu">
+    <nav class="menu menu--no-js">
       <a class="header__logo-container">
         <svg class="header__logo" width="58" height="22">
           <use xlink:href="#logo"></use>
         </svg>
       </a>
-      <button class="menu__button button-reset">
+      <button class="menu__button menu__button--no-js button-reset">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="menu__list list-reset">
+      <ul class="menu__list menu__list--no-js list-reset">
         <li class="menu__item">
-          <a class="menu__action link-reset" href="#places">О путешествии</a>
+          <a class="menu__action link-reset" href="#places">
+            О путешествии
+            <svg class="menu__arrow" width="25px" height="25px">
+              <use xlink:href="#icon-menu-item-arrow"></use>
+            </svg>
+          </a>
         </li>
         <li class="menu__item menu__item--price">
-          <a class="menu__action link-reset" href="#prices">Цены</a>
+          <a class="menu__action link-reset" href="#prices">
+            Цены
+            <svg class="menu__arrow" width="25px" height="25px">
+              <use xlink:href="#icon-menu-item-arrow"></use>
+            </svg>
+          </a>
         </li>
         <li class="menu__item menu__item--phone">
           <a class="menu__action phone link-reset" href="tel:+749978468446">
@@ -190,6 +204,9 @@
                 srcset="img/countries/places-greece-desktop@2x.jpg 2x" alt="Греция" width="350" height="430">
             </picture>
             <span class="countries-list__country">Греция</span>
+            <span class="countries-list__hover-mask">
+              <span class="countries-list__more">Смотреть подробнее</span>
+            </span>
           </a>
         </li>
         <li class="countries-list__item">
@@ -205,6 +222,9 @@
                 srcset="img/countries/places-albania-desktop@2x.jpg 2x" alt="Албания" width="350" height="430">
             </picture>
             <span class="countries-list__country">Албания</span>
+            <span class="countries-list__hover-mask">
+              <span class="countries-list__more">Смотреть подробнее</span>
+            </span>
           </a>
         </li>
         <li class="countries-list__item">
@@ -220,6 +240,9 @@
                 srcset="img/countries/places-macedonia-desktop@2x.jpg 2x" alt="Македония" width="350" height="430">
             </picture>
             <span class="countries-list__country">Македония</span>
+            <span class="countries-list__hover-mask">
+              <span class="countries-list__more">Смотреть подробнее</span>
+            </span>
           </a>
         </li>
         <li class="countries-list__item">
@@ -235,6 +258,9 @@
                 srcset="img/countries/places-chernogoria-desktop@2x.jpg 2x" alt="Черногория" width="350" height="430">
             </picture>
             <span class="countries-list__country">Черногория</span>
+            <span class="countries-list__hover-mask">
+              <span class="countries-list__more">Смотреть подробнее</span>
+            </span>
           </a>
         </li>
         <li class="countries-list__item">
@@ -250,6 +276,9 @@
                 srcset="img/countries/places-croatia-desktop@2x.jpg 2x" alt="Хорватия" width="350" height="430">
             </picture>
             <span class="countries-list__country">Хорватия</span>
+            <span class="countries-list__hover-mask">
+              <span class="countries-list__more">Смотреть подробнее</span>
+            </span>
           </a>
         </li>
       </ul>
@@ -288,7 +317,7 @@
               наградой
               будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
             </p>
-            <button class="country-card__button button button-reset">Купить тур сейчас</button>
+            <button class="country-card__button button button--open-modal button-reset">Купить тур сейчас</button>
           </div>
           <div class="country-card__wrapper">
             <picture class="country-card__picture">
@@ -341,7 +370,7 @@
               Однако,
               присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
             </p>
-            <button class="country-card__button button button-reset">Купить тур сейчас</button>
+            <button class="country-card__button button button--open-modal button-reset">Купить тур сейчас</button>
           </div>
           <div class="country-card__wrapper">
             <picture class="country-card__picture">
@@ -390,7 +419,7 @@
               местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен
               где находится археологический памятник Кокино в длину около 100 метров.
             </p>
-            <button class="country-card__button button button-reset">Купить тур сейчас</button>
+            <button class="country-card__button button button--open-modal button-reset">Купить тур сейчас</button>
           </div>
           <div class="country-card__wrapper">
             <picture class="country-card__picture">
@@ -442,7 +471,7 @@
               берегов
               доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
             </p>
-            <button class="country-card__button button button-reset">Купить тур сейчас</button>
+            <button class="country-card__button button button--open-modal button-reset">Купить тур сейчас</button>
           </div>
           <div class="country-card__wrapper">
             <picture class="country-card__picture">
@@ -493,7 +522,7 @@
               глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами — сталактитами и
               сталагмитами — формировавшимися тысячи и тысячи лет.
             </p>
-            <button class="country-card__button button button-reset">Купить тур сейчас</button>
+            <button class="country-card__button button button--open-modal button-reset">Купить тур сейчас</button>
           </div>
           <div class="country-card__wrapper">
             <picture class="country-card__picture">
@@ -585,7 +614,7 @@
               Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <button class="packages__button button button-reset">Купить тур сейчас</button>
+          <button class="packages__button button button--open-modal button-reset">Купить тур сейчас</button>
         </li>
         <li class="packages__item">
           <div class="packages__intro">
@@ -625,7 +654,7 @@
               Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <button class="packages__button button button-reset">Купить тур сейчас</button>
+          <button class="packages__button button button--open-modal button-reset">Купить тур сейчас</button>
         </li>
       </ul>
     </section>
@@ -724,7 +753,8 @@
           <svg class="contacts__icon contacts__icon--email" width="26" height="20">
             <use xlink:href="#icon-envelop"></use>
           </svg>
-          puteshestviemechta@gmail.ru
+          <span class="contacts__text contacts__text--email">puteshestviemechta@gmail.ru</span>
+          <span class="contacts__text">Почта</span>
         </a>
         <a class="contacts__phone phone link-reset" href="tel:+749978468446">
           <svg class="contacts__icon phone__icon" width="17" height="24">
@@ -743,15 +773,19 @@
     </section>
   </footer>
   <div class="modal">
+    <button class="modal__button modal__button--close button-reset">
+      <span class="visually-hidden">Закрыть модальное окно</span>
+    </button>
     <picture>
       <source type="image/webp" srcset="img/by-the-sea.webp 1x, img/by-the-sea@2x.webp 2x">
-      <img src="img/by-the-sea.jpg" srcset="img/by-the-sea@2x.jpg 2x" alt="Море" width="338" height="444">
+      <img class="modal__image" src="img/by-the-sea.jpg" srcset="img/by-the-sea@2x.jpg 2x" alt="Море" width="338"
+        height="444">
     </picture>
-    <form class="callback-form" action="#" method="POST">
+    <form class="callback-form callback-form--modal" action="#" method="POST">
       <h3 class="callback-form__title">Купить тур</h3>
       <p class="callback-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-      <div class="callback-form__input-container">
-        <input class="callback-form__input input-reset" type="number" name="phone"
+      <div class="callback-form__input-container callback-form__input-container--modal">
+        <input class="callback-form__input callback-form__input--modal input-reset" type="number" name="phone"
           placeholder="+7   Введите 10 цифр номера" aria-label="Ваш номер телефона" required>
         <input class="callback-form__input input-reset" type="email" name="email" placeholder="E-mail"
           aria-label="Ваша элетронная почта">
@@ -759,9 +793,11 @@
       <button class="callback-form__button button button-reset" type="submit">Отправить</button>
     </form>
   </div>
+
   <script src="js/menu.min.js"></script>
   <script src="js/countries.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/modal.min.js"></script>
 </body>
 
 </html>

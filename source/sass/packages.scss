@@ -18,7 +18,7 @@
   justify-content: space-between;
   width: 45.178%;
   box-sizing: border-box;
-  border: 1px solid $semi-grey-light-opacity;
+  box-shadow: inset 0 0 0 1px $semi-grey-light-opacity;
   border-radius: 6px;
   background-color: $white;
   padding: 15px 3.7% 30px 3.7%;
@@ -26,6 +26,10 @@
 
   &:last-child {
     margin: 0;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 3px $carrot-red;
   }
 
   @media (max-width: $desktop-width) {
@@ -135,3 +139,15 @@
     padding: 16px 30px;
   }
 }
+
+.packages__item:hover .packages__title {
+ color: $carrot-red;
+}
+
+.packages__item:hover .packages__price {
+ color: $carrot-red;
+}
+
+.packages__item:hover .packages__text {
+  border-color: $carrot-red;
+ }

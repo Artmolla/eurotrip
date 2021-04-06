@@ -14,6 +14,7 @@
 .countries-info__navigation {
   @include flex;
 
+  box-sizing: border-box;
   width: 78%;
   font-weight: 500;
   font-size: 20px;
@@ -34,7 +35,7 @@
   @media (max-width: $desktop-width) {
     flex-wrap: nowrap;
     padding: 0 4.8% 14px 4.8%;
-    overflow-x: scroll;
+    overflow: hidden;
   }
 }
 
@@ -50,7 +51,17 @@
   }
 
   @media (max-width: $desktop-width) {
-    margin-right: 31%;
+    margin-right: 14.4%;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 35%;
+  }
+}
+
+.countries-info__navigation-action {
+  &:hover {
+    color: $semi-grey;
   }
 }
 
