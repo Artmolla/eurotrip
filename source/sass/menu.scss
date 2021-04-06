@@ -94,7 +94,10 @@
 .menu--no-js {
   background-color: $white;
   align-items: flex-start;
-  min-height: 568px;
+
+  @media (max-width: $desktop-width) {
+    min-height: 568px;
+  }
 }
 
 .menu__list--no-js {

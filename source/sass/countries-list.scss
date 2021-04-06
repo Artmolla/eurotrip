@@ -2,7 +2,7 @@
   @include flex;
 
   justify-content: center;
-  padding-top: 39px;
+  padding-top: 37px;
 
   @media (max-width: $desktop-width) {
     padding-top: 23px;
@@ -14,7 +14,7 @@
 }
 
 .countries-list__item {
-  margin: 0 4.445% 94px 0;
+  margin: 0 4.445% 100px 0;
   flex-basis: 30.215%;
 
   &:last-child {

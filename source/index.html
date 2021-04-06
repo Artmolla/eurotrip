@@ -673,7 +673,7 @@
           <h3 class="callback-form__title">У Вас остались вопросы?</h3>
           <p class="callback-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
           <div class="callback-form__input-container">
-            <input class="callback-form__input input-reset" type="number" name="phone" id="phone-field"
+            <input class="callback-form__input callback-form__input--phone input-reset" type="tel" name="phone" id="phone-field"
               placeholder="+7   Введите 10 цифр номера" aria-label="Ваш номер телефона" required>
             <input class="callback-form__input input-reset" type="email" name="email" id="email-field"
               placeholder="E-mail" aria-label="Ваша элетронная почта">
@@ -785,7 +785,7 @@
       <h3 class="callback-form__title">Купить тур</h3>
       <p class="callback-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
       <div class="callback-form__input-container callback-form__input-container--modal">
-        <input class="callback-form__input callback-form__input--modal input-reset" type="number" name="phone"
+        <input class="callback-form__input callback-form__input--phone callback-form__input--modal input-reset" type="tel" name="phone"
           placeholder="+7   Введите 10 цифр номера" aria-label="Ваш номер телефона" required>
         <input class="callback-form__input input-reset" type="email" name="email" placeholder="E-mail"
           aria-label="Ваша элетронная почта">
@@ -793,10 +793,16 @@
       <button class="callback-form__button button button-reset" type="submit">Отправить</button>
     </form>
   </div>
+  <div class="modal modal--success-message">
+    <p>Форма успешно отправлена, спасибо! :)</p>
+  </div>
+
+  <div class="overlay"></div>
 
   <script src="js/menu.min.js"></script>
   <script src="js/countries.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/form.min.js"></script>
   <script src="js/modal.min.js"></script>
 </body>
 

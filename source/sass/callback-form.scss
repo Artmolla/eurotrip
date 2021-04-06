@@ -5,6 +5,7 @@
   box-sizing: border-box;
   position: absolute;
   width: 656px;
+  min-height: 315px;
   top: 49.4%;
   right: -325px;
   transform: translateY(-50%);
@@ -47,6 +48,7 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   width: 100%;
+  margin-bottom: 10px;
 
   @media (max-width: $desktop-width) {
     margin-bottom: 30px;
