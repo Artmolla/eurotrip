@@ -1,10 +1,10 @@
-'use strict';
-
-(() => {
   const openModalButton = document.querySelectorAll('.button--open-modal');
+  const overlay = document.querySelector('.overlay');
 
   const closeModal = (modal, buttonClose) => {
     modal.classList.remove('modal--show');
+    overlay.classList.remove('overlay--show');
+
     buttonClose.removeEventListener('click', closeModalClickHandler);
     document.removeEventListener('keydown', closeModalKeyPressHandler);
     document.removeEventListener('click', closeModalOutsideClickHandler);
@@ -15,12 +15,14 @@
 
     if (isEscKey) {
       document.querySelector('.modal--show').classList.remove('modal--show');
+      document.querySelector('.overlay--show').classList.remove('overlay--show');
     }
   };
 
   const closeModalOutsideClickHandler = (evt) => {
-    if (evt.target.classList.contains('modal')) {
-      document.querySelector('.modal--show').classList.remove('modal--show');
+    if (evt.target.classList.contains('overlay')) {
+      document.querySelector('.modal').classList.remove('modal--show');
+      document.querySelector('.overlay').classList.remove('overlay--show');
     }
   };
 
@@ -37,9 +39,11 @@
     const modal = document.querySelector('.modal');
 
     modal.classList.add('modal--show');
-    const modalCloseButton = modal.querySelector('.modal__button--close');
+    overlay.classList.add('overlay--show');
 
-    modalCloseButton.focus();
+    const modalCloseButton = modal.querySelector('.modal__button--close');
+    const modalInput = modal.querySelector('.callback-form__input');
+    modalInput.focus();
     modalCloseButton.addEventListener('click', closeModalClickHandler);
     document.addEventListener('keydown', closeModalKeyPressHandler);
     document.addEventListener('click', closeModalOutsideClickHandler);
@@ -48,4 +52,3 @@
   openModalButton.forEach((button) => {
     button.addEventListener('click', openModalClickHandler);
   });
-})();

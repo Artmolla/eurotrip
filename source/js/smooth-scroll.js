@@ -1,6 +1,3 @@
-'use strict';
-
-(() => {
   const makeSmoothScroll = () => {
     const anchorsList = document.querySelectorAll('a[href*="#"]');
 
@@ -16,4 +13,5 @@
       });
     }
   };
-})();
+
+  makeSmoothScroll();
