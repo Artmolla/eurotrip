@@ -49,5 +49,3 @@
     button.addEventListener('click', openModalClickHandler);
   });
 })();
-
-
