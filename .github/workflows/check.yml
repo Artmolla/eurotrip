@@ -1,0 +1,40 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches: '*'
+
+name: Project check
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.18'
+
+    - uses: actions/checkout@master
+      name: Checkout
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Run checks
+      run: |
+        npm test
+
+    - name: Build
+      run: |
+        npm run build
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      with:
+        token: ${{ secrets.EUROTRIP_ACTION }}
+        branch: gh-pages
+        folder: build
+        CLEAN: true
