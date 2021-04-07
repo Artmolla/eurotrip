@@ -20,46 +20,6 @@
   @include input-reset;
 }
 
-.container {
-  width: 61.667%;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (max-width: $desktop-width) {
-    width: 100%;
-  }
-}
-
-.title {
-  @include title;
-
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: -24px;
-    left: 0;
-    width: 175px;
-    height: 4px;
-    background-color: $carrot-red;
-
-    @media (max-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  @media (max-width: $desktop-width) {
-    font-size: 30px;
-    line-height: 45px;
-    letter-spacing: normal;
-  }
-
-  @media (max-width: $tablet-width) {
-    font-size: 24px;
-  }
-}
-
 .text {
   font-size: 16px;
   line-height: 28px;
